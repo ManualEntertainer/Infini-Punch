@@ -28,7 +28,6 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
         hitbox.SetActive(false);
-        EnableHitbox enableHitbox = GetComponent<EnableHitbox>();
     }
 
     // Update is called once per frame
