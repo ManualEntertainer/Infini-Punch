@@ -23,14 +23,27 @@ public class StaminaManager : MonoBehaviour
         if (stamina < 1 && !isBlocking)
         {
             stamina += staminaIncreaseOvertime * Time.deltaTime;
-            if (stamina < 0 && !isBlocking)
+            if (stamina <= 0)
+            {
                 stamina = 0;
-        }
+                Destroy(gameObject);
+            }
 
+        }
+        else if (stamina > 1) 
+        {
+            stamina = 1;
+        }
     }
 
     public void ReduceStamina(float reduceAmount)
     {
         stamina -= reduceAmount;
     }
+    public void GainStamina(float gainAmount)
+    {
+        stamina += gainAmount;
+    }
+
+
 }
