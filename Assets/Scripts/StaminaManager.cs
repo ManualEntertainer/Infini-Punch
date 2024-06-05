@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class StaminaManager : MonoBehaviour
 {
-    private float stamina = 1f;
+    protected float stamina = 1f;
     private float staminaIncreaseOvertime = 0.1f;
     public Slider staminaSlider;
 
