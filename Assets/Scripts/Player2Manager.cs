@@ -121,6 +121,8 @@ public class Player2Manager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        animator.SetBool("isHit", true);
+
         if (isParrying)
         {
             // Handle successful parry
@@ -133,5 +135,9 @@ public class Player2Manager : MonoBehaviour
             staminaManager.ReduceStamina(0.25f);
         }
 
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        animator.SetBool("isHit", false);
     }
 }

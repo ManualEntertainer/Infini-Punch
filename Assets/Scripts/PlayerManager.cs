@@ -42,7 +42,7 @@ public class PlayerManager : MonoBehaviour
             Punch();
             staminaManager.ReduceStamina(0.3f);
         }
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             StartParry();
         }
@@ -57,10 +57,12 @@ public class PlayerManager : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             Block();
         }
+
+
     }
 
     void Punch()
@@ -119,6 +121,8 @@ public class PlayerManager : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        animator.SetBool("isHit", true);
+
         if (isParrying)
         {
             // Handle successful parry
@@ -131,5 +135,10 @@ public class PlayerManager : MonoBehaviour
             staminaManager.ReduceStamina(0.25f);
         }
 
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        animator.SetBool("isHit", false);
     }
 }

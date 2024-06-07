@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c74068c34e5861c4c89f2b2bd3ce821e
+guid: ce99298cfcd81bf4c9eb4887bb0df89c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,12 +123,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Parry-sheet_0
+      name: Block_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 419
+        width: 480
         height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,19 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25588260540ad4049aca57789d2909e9
-      internalID: 162522331
+      spriteID: 3f396dc639a9f84498da0b42443d1f58
+      internalID: -1313259491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Parry-sheet_1
+      name: Block_1
       rect:
         serializedVersion: 2
         x: 480
         y: 0
-        width: 419
+        width: 480
         height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -158,19 +158,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c6f19237a9b5514a80d701172769cda
-      internalID: -378918713
+      spriteID: fc6104ef83019b34ea3f2937507454d9
+      internalID: -1266136552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Parry-sheet_2
+      name: Block_2
       rect:
         serializedVersion: 2
         x: 960
         y: 0
-        width: 419
+        width: 480
         height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -179,19 +179,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eec446327bf8a74fa94b38b26d4bdd1
-      internalID: 1219501039
+      spriteID: 47483a5c6b5f41343a7931b3b5a019e2
+      internalID: -510644178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Parry-sheet_3
+      name: Block_3
       rect:
         serializedVersion: 2
         x: 1440
         y: 0
-        width: 419
+        width: 480
         height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -200,19 +200,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3853b73c3697da44e9f53613308a5a55
-      internalID: 1766323169
+      spriteID: 85c70794504bbea45865686a652bf78b
+      internalID: -1053414406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Parry-sheet_4
+      name: Block_4
       rect:
         serializedVersion: 2
         x: 1920
         y: 0
-        width: 419
+        width: 480
         height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,8 +221,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d20c9ebae982140adb3331f5dfa3a0
-      internalID: -1725393180
+      spriteID: a4002495a9ae15e4e89aa4fbe502f706
+      internalID: -1667698144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_5
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 480
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb6aa36514c4ee4bb4fc9fd017e6e63
+      internalID: -1080963685
       vertices: []
       indices: 
       edges: []
@@ -238,11 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Parry-sheet_0: 162522331
-      Parry-sheet_1: -378918713
-      Parry-sheet_2: 1219501039
-      Parry-sheet_3: 1766323169
-      Parry-sheet_4: -1725393180
+      Block_0: -1313259491
+      Block_1: -1266136552
+      Block_2: -510644178
+      Block_3: -1053414406
+      Block_4: -1667698144
+      Block_5: -1080963685
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

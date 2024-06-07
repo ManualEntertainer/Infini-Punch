@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StaminaManager : MonoBehaviour
 {
-    protected float stamina = 1f;
+    public float stamina = 1f;
     private float staminaIncreaseOvertime = 0.1f;
     public Slider staminaSlider;
+
+    public TextMeshProUGUI winTextP1;
+    public TextMeshProUGUI winTextP2;
 
     public bool isBlocking = false;
 
@@ -25,6 +29,14 @@ public class StaminaManager : MonoBehaviour
             stamina += staminaIncreaseOvertime * Time.deltaTime;
             if (stamina <= 0)
             {
+                /*if (gameObject.name == "Glass Joe (P2)")
+                {
+                    winTextP2.enabled = true;
+                }
+                else
+                {
+                    winTextP1.enabled = true;
+                }*/
                 stamina = 0;
                 Destroy(gameObject);
             }

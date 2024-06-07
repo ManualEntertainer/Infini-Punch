@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c74068c34e5861c4c89f2b2bd3ce821e
+guid: 375f87a1ae4084842b84cc646bf95297
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,106 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Parry-sheet_0
+      name: hit_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 419
+        width: 398
         height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25588260540ad4049aca57789d2909e9
-      internalID: 162522331
+      spriteID: b6f8021277c966d4aa8ffcad289dce2d
+      internalID: -779403416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Parry-sheet_1
+      name: hit_1
       rect:
         serializedVersion: 2
         x: 480
         y: 0
-        width: 419
+        width: 398
         height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c6f19237a9b5514a80d701172769cda
-      internalID: -378918713
+      spriteID: 030e25f82fa7b8a4aa788a511e9533c0
+      internalID: 147245457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Parry-sheet_2
+      name: hit_2
       rect:
         serializedVersion: 2
         x: 960
         y: 0
-        width: 419
+        width: 398
         height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eec446327bf8a74fa94b38b26d4bdd1
-      internalID: 1219501039
+      spriteID: 86dd2191f092fde438ee5675560e19c4
+      internalID: 1215134429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Parry-sheet_3
+      name: hit_3
       rect:
         serializedVersion: 2
         x: 1440
         y: 0
-        width: 419
+        width: 398
         height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3853b73c3697da44e9f53613308a5a55
-      internalID: 1766323169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Parry-sheet_4
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 0
-        width: 419
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82d20c9ebae982140adb3331f5dfa3a0
-      internalID: -1725393180
+      spriteID: b1711729e3ff2d34fb3d034b77a363b7
+      internalID: -712815267
       vertices: []
       indices: 
       edges: []
@@ -238,11 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Parry-sheet_0: 162522331
-      Parry-sheet_1: -378918713
-      Parry-sheet_2: 1219501039
-      Parry-sheet_3: 1766323169
-      Parry-sheet_4: -1725393180
+      hit_0: -779403416
+      hit_1: 147245457
+      hit_2: 1215134429
+      hit_3: -712815267
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
