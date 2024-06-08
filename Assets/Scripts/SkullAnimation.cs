@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 // INHERITANCE
 public class SkullAnimation : StaminaManager
 {
     private Animator animator;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -20,21 +22,19 @@ public class SkullAnimation : StaminaManager
     // Update is called once per frame
     void Update()
     {
-        stamina = staminaSlider.value;
+        Stamina = staminaSlider.value;
 
-        if (stamina < 0.333f)
+        if (Stamina <= 0f)
         {
-            if (!animator.GetBool("hasLowStamina"))
-            {
-                animator.SetBool("hasLowStamina", true);
-            }
+            animator.SetBool("isDead", true);
+        }
+        if (Stamina < 0.333f)
+        {
+            animator.SetBool("hasLowStamina", true);
         }
         else
         {
-            if (animator.GetBool("hasLowStamina"))
-            {
-                animator.SetBool("hasLowStamina", false);
-            }
+            animator.SetBool("hasLowStamina", false);
         }
     }
 }

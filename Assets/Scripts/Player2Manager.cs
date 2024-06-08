@@ -37,12 +37,11 @@ public class Player2Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.KeypadEnter)) //&& staminaManager.staminaSlider.value >= 0.3
+        if (Input.GetKeyDown(KeyCode.KeypadEnter) & !animator.GetBool("isPunching"))
         {
             Punch();
-            staminaManager.ReduceStamina(0.3f);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad1))
+        if (Input.GetKeyDown(KeyCode.Keypad1) & !isParrying)
         {
             StartParry();
         }
@@ -57,7 +56,7 @@ public class Player2Manager : MonoBehaviour
             }
         }
         
-        if (Input.GetKeyDown(KeyCode.Keypad1 ))
+        if (Input.GetKeyDown(KeyCode.Keypad1) & !animator.GetBool("isBlocking"))
         {
             Block();
         }
@@ -66,6 +65,7 @@ public class Player2Manager : MonoBehaviour
     void Punch()
     {
         animator.SetBool("isPunching", true);
+        staminaManager.ReduceStamina(0.3f);
     }
 
     public void DisablePunch()

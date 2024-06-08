@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class PlayerManager : MonoBehaviour
 {
     public GameObject hitbox;
-    PlayerController controls;
+    //PlayerController controls;
 
     StaminaManager staminaManager;
 
@@ -20,7 +20,7 @@ public class PlayerManager : MonoBehaviour
 
     void Awake()
     {
-        controls = new PlayerController();
+        //controls = new PlayerController();
         animator = GetComponent<Animator>();
         staminaManager = GetComponent<StaminaManager>();
         hitbox.SetActive(false);
@@ -37,12 +37,11 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) //&& staminaManager.staminaSlider.value >= 0.3
+        if (Input.GetKeyDown(KeyCode.Space) & !animator.GetBool("isPunching")) //&& staminaManager.staminaSlider.value >= 0.3
         {
             Punch();
-            staminaManager.ReduceStamina(0.3f);
         }
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) & !isParrying)
         {
             StartParry();
         }
@@ -57,7 +56,7 @@ public class PlayerManager : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) & !animator.GetBool("isBlocking"))
         {
             Block();
         }
@@ -68,6 +67,7 @@ public class PlayerManager : MonoBehaviour
     void Punch()
     {
         animator.SetBool("isPunching", true);
+        staminaManager.ReduceStamina(0.3f);
     }
 
     public void DisablePunch()
